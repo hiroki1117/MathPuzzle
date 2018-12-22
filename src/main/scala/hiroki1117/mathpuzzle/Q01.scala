@@ -6,10 +6,15 @@ object Q01 {
   10以上から
    */
 
-
   def answer(num: Int = 10): Int = {
     val stream = Stream.from(num)
     stream.find(checkThree).getOrElse(0)
+  }
+
+  //偶数は探索しないように最適化
+  def answer2(num: Int = 10): Int = {
+    val stream = Stream.from(num)
+    stream.filter(_%2==1).find(checkThree).getOrElse(0)
   }
 
   private[Q01] def checkThree(num: Int): Boolean = checkPalindrome2(num) && checkPalindrome8(num) && checkPalindrome10(num)
