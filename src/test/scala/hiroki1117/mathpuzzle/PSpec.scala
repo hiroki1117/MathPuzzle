@@ -36,4 +36,8 @@ class PSpec extends FlatSpec {
   "Q05" should "answer 20" in {
     Q05.answer should be (20)
   }
+
+  "Q06" should "answer 34" in {
+    Q06.answer(10000) should be (34)
+  }
 }
