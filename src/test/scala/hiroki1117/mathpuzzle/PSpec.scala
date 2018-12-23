@@ -16,4 +16,8 @@ class PSpec extends FlatSpec {
   "Q02" should "answer 5931" in {
     Q02.answer(1000, 9999) should be (Set(5931))
   }
+
+  "Q03" should "answer 1,4,9,16,25,36,49,64,81,100" in {
+    Q03.answer(100) should be (List(1,4,9,16,25,36,49,64,81,100))
+  }
 }
