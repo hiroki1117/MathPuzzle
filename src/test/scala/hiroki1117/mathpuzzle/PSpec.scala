@@ -12,4 +12,8 @@ class PSpec extends FlatSpec {
   it should "answer 585 with answer2" in {
     Q01.answer2(10) should be (585)
   }
+
+  "Q02" should "answer 5931" in {
+    Q02.answer(1000, 9999) should be (Set(5931))
+  }
 }
