@@ -32,4 +32,8 @@ class PSpec extends FlatSpec {
   it should "answer 22 when n=100 and m=5" in {
     Q04.answer2(100, 5) should be (22)
   }
+
+  "Q05" should "answer 20" in {
+    Q05.answer should be (20)
+  }
 }
