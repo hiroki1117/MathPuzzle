@@ -21,4 +21,9 @@ object Q03 {
     }
     cards.toList.filter(_._2).map(_._1)
   }
+
+  def answer2(to: Int = 100): List[Int] = (1 to to) filter(countDivisor(_)%2-1==0) toList
+
+  //約数の個数を数える
+  def countDivisor(num: Int): Int = (1 to num) filter(num%_==0) length
 }

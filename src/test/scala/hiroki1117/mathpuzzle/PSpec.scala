@@ -20,4 +20,8 @@ class PSpec extends FlatSpec {
   "Q03" should "answer 1,4,9,16,25,36,49,64,81,100" in {
     Q03.answer(100) should be (List(1,4,9,16,25,36,49,64,81,100))
   }
+
+  it should "answer ... with answer2" in {
+    Q03.answer2(100) should be (List(1,4,9,16,25,36,49,64,81,100))
+  }
 }
