@@ -44,4 +44,8 @@ class PSpec extends FlatSpec {
   "Q07" should "answer 19660713,19660905,19770217,19950617,20020505,20130201" in {
     Q07.answer(1964,10,10) should be (List("19660713", "19660905", "19770217", "19950617", "20020505", "20130201"))
   }
+
+  "Q08" should "answer 324932 pattern" in {
+    Q08.answer(12) should be (324932)
+  }
 }
