@@ -48,4 +48,12 @@ class PSpec extends FlatSpec {
   "Q08" should "answer 324932 pattern" in {
     Q08.answer(12) should be (324932)
   }
+
+  "Q10" should "equal (73, 77) with n = 3" in {
+    Q10.answer()(1) should be ((73, 77))
+  }
+
+  it should "answer 9" in {
+    Q10.answer().filter(x => x._1 > x._2).length should be (9)
+  }
 }
