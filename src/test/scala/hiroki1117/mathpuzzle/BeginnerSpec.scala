@@ -22,4 +22,8 @@ class BeginnerSpec extends FlatSpec {
   it should "be 143 only Fractional part" in {
     Q12.answerFractionalPartOnly should be (143)
   }
+
+  "Q15" should "be 201 if n = 10" in {
+    Q15.answer(10) should be (201)
+  }
 }
